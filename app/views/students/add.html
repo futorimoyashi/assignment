@@ -1,0 +1,48 @@
+<div ng-controller="AddCtrl">
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="alert alert-danger" ng-if="errorMessage != null">{{errorMessage}}</div>
+    </div>
+    <div class="row-6">
+        <form name="addForm">
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" ng-model="addForm.username" class="form-control"
+                    placeholder="Username" required name="txtName">
+                <span ng-show="addForm.txtName.$invalid">Please insert name</span>
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" ng-model="addForm.password" class="form-control" required name="txtPw">
+                <span ng-show="addForm.txtPw.$invalid">Please insert name</span>
+            </div>
+            <div class="form-group">
+                <label>Fullname:</label>
+                <input type="text" placeholder="Full Name" ng-model="addForm.fullname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Email" ng-model="addForm.email" class="form-control" name="txtEmail">
+                <span ng-show="addForm.txtEmail.$invalid">Email is invalid</span>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio">
+                  <label><input type="radio" ng-model="addForm.gender" value="true" checked>Male</label>
+                  <label><input type="radio" ng-model="addForm.gender" value="false">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Birthday</label>
+                <input type="date" ng-model="addForm.birthday" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>School Fee</label>
+                <input type="number" ng-model="addForm.schoolfee" class="form-control" min="0">
+            </div>
+            <input type="submit" value="Add" ng-click="add()" ng-show="addForm.$valid">
+            <input type="reset" value="Cancel">
+        </form>
+    </div>
+
+</div>

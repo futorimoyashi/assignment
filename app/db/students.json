@@ -1,0 +1,113 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "username": "teonv",
+      "password": "123",
+      "fullname": "Nguyễn Văn Tèo",
+      "email": "teonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1995-12-21",
+      "schoolfee": "1500000",
+      "marks": 0
+    },
+    {
+      "id": 2,
+      "username": "pheonv",
+      "password": "123",
+      "fullname": "Nguyễn Văn Chí Phèo",
+      "email": "pheonv@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1985-10-11",
+      "schoolfee": "2500000",
+      "marks": 0
+    },
+    {
+      "id": 3,
+      "username": "nopt",
+      "password": "123",
+      "fullname": "Phạm Thị Nở",
+      "email": "nopt@fpt.edu.vn",
+      "gender": "false",
+      "birthday": "1993-05-15",
+      "schoolfee": "2000000",
+      "marks": 0
+    },
+    {
+      "id": 4,
+      "username": "a01",
+      "password": "456",
+      "fullname": "Kin nek",
+      "email": "kinnek@fpt.edu.vn",
+      "gender": "true",
+      "birthday": "1995-12-21",
+      "schoolfee": "1500000",
+      "marks": 11
+    },
+    {
+      "username": "a02",
+      "password": "123",
+      "fullname": "na na",
+      "email": "nvtt@gmail.com",
+      "gender": "true",
+      "birthday": "1998-06-18T15:00:00.000Z",
+      "schoolfee": 999998,
+      "marks": 0,
+      "id": 5
+    },
+    {
+      "username": "tung",
+      "password": "123",
+      "fullname": "kin",
+      "email": "kin@gmail.com",
+      "gender": "true",
+      "birthday": "1998-06-18T15:00:00.000Z",
+      "schoolfee": 100000000,
+      "marks": 10,
+      "id": 6
+    },
+    {
+      "username": "a03",
+      "password": "123",
+      "fullname": "peng peng",
+      "gender": "true",
+      "birthday": "2000-09-11T15:00:00.000Z",
+      "schoolfee": 200000,
+      "marks": 0,
+      "id": 7
+    },
+    {
+      "username": "kidnaps",
+      "password": "123",
+      "fullname": "fa",
+      "email": "kin@gmail.com",
+      "gender": "true",
+      "birthday": "2011-02-21T15:00:00.000Z",
+      "schoolfee": 1231245,
+      "marks": 0,
+      "id": 8
+    },
+    {
+      "username": "jane",
+      "password": "123",
+      "fullname": "jane",
+      "email": "jane@gmail.com",
+      "gender": "true",
+      "birthday": "2000-03-19T15:00:00.000Z",
+      "schoolfee": 123,
+      "marks": 0,
+      "id": 9
+    },
+    {
+      "username": "annie",
+      "password": "123",
+      "fullname": "annie",
+      "email": "annie@gmail.com",
+      "gender": "false",
+      "birthday": "2000-04-03T15:00:00.000Z",
+      "schoolfee": 120,
+      "marks": 0,
+      "id": 10
+    }
+  ]
+}

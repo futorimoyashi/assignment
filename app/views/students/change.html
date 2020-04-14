@@ -1,0 +1,23 @@
+<div ng-controller="ChangeCtrl">
+    <div class="row">
+        <form name="changeForm">
+            <div class="form-group">
+                <label>New Password:</label>
+                <input type="password" ng-model="changeForm.password" class="form-control" required name="txtOldPass">
+                <span ng-show="changeForm.txtOldPass.$invalid">Old Password is incorrect</span>
+            </div>
+            <div class="form-group">
+                <label>New Password:</label>
+                <input type="password" ng-model="changeForm.newPassword" class="form-control" required name="txtNewPass">
+                <span ng-show="changeForm.txtNewPass.$invalid">New Password is incorrect</span>
+            </div>
+            <input ng-disable="changeForm.txtNewPass != changeForm.txtOldPass" type="submit" value="Submit" ng-click="changePassword()">
+        </form>
+    </div>
+    <div class="row">
+        <div class="alert alert-danger" ng-if="errorMessage != null">{{errorMessage}}</div>
+        <div ng-if="msg != null">
+            <label class="alert alert-success">Change Password success</label>
+        </div>
+    </div>
+</div>

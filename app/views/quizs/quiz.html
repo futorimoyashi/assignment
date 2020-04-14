@@ -1,0 +1,33 @@
+<div ng-controller="SubjectCtrl">
+    <div class="row">
+        <h3 class="alert alert-success">Quiz of {{nameSubject}}</h3>
+        <hr>
+    </div>
+    <div class="row" ng-if="sumup === false">
+        <div class="card col">
+            <div class="card-header">
+                <div>Time: {{time}}</div>
+                <div>Question {{currentQuestion + 1}}: {{question().Marks}} Marks</div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{question().Text}}</h5>
+                <hr>
+                <p class="card-text" ng-repeat="item in question().Answers">
+                    <label>
+                        <input type="radio" ng-model="answer.choice" value="{{item.Id}}" name="answer"> {{item.Text}}
+                    </label>
+                </p>
+                <hr>
+                <div ng-hide="currentQuestion == 0" ng-click="setQuestionIndex(0)" class="btn btn-outline-primary">First</div>
+                <div ng-hide="currentQuestion == 0" ng-click="setQuestionIndex(currentQuestion - 1)" class="btn btn-outline-primary">Previous</div>
+                <div ng-hide="currentQuestion == questions.length - 1" ng-click="setQuestionIndex(currentQuestion + 1)" class="btn btn-outline-primary">Next</div>
+                <div ng-hide="currentQuestion == questions.length - 1" ng-click="setQuestionIndex(questions.length - 1)" class="btn btn-outline-primary">Last</div>
+                <hr>
+                <div ng-click="submitQuiz()" class="btn btn-outline-success">Submit</div>
+            </div>
+        </div>
+    </div>
+    <div ng-if="sumup === true" ng-include="'views/quizs/sumup.html'">
+
+    </div>
+</div>
