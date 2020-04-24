@@ -7,11 +7,16 @@
             <div class="card-body">
                 <h5 class="card-title"></h5>
                 <p class="card-text">
-                    <h2>Total of Questions: {{questions.length}}</h2>
-                    <h2>Quiz Marks: {{quizMarks}}</h2>
-                    <h2>Submit Time at: {{time}}</h2>
+                    <h2>Total of Questions: <span class="label label-info">{{questions.length}}</span></h2>
+                    <h2>Submit Time at: <span class="label label-info">{{time}}</span></h2>
+                    <hr>
+                    <h2>Quiz Marks: <span class="label label-primary">{{quizMarks}}</span></h2>
+                    <h2 ng-if="quizMarks < questions.length/2">Your result is <span class="label label-danger">Not Pass</span></h2>
+                    <h2 ng-if="quizMarks >= questions.length/2">Your result is <span class="label label-success">Passed</span></h2>
+                    <hr>
                 </p>
                 <a ng-href="#!/listSubjects" class="nav-link">Take Another Quiz</a>
+                <a ng-href="#!/listSubjects" ng-click="saveResult()" class="nav-link">Save This Result</a>
             </div>
         </div>
     </div>

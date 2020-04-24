@@ -46,9 +46,11 @@ angular.module('myApp.student', ['ngRoute'])
             studentFactory.checkLogin($scope.loginForm.username, $scope.loginForm.password).then(data => {
                 if (data != null && data.length>0){
                     studentFactory.setIsLogin(true);
-                    sessionStorage.setItem('id', data[0].id)
+                    studentFactory.setName(data[0].fullname);
+                    sessionStorage.setItem('id', data[0].id);
                     $location.path('/');
                     $scope.errorMessage = null;
+                    console.log(studentFactory.getName())
                 }else{
                     studentFactory.setIsLogin(false);
                     $scope.errorMessage = "Invalid username or password";
@@ -60,6 +62,7 @@ angular.module('myApp.student', ['ngRoute'])
     .controller('LogoutCtrl', ['studentFactory','$scope','$location', function ( studentFactory, $scope, $location) {
         $scope.logout = ()=>{
             studentFactory.setIsLogin(false);
+            studentFactory.setName('');
             sessionStorage.clear();
             $location.path('/');
         };

@@ -36,13 +36,13 @@
     {
       "id": 4,
       "username": "a01",
-      "password": "456",
+      "password": "123",
       "fullname": "Kin nek",
       "email": "kinnek@fpt.edu.vn",
       "gender": "true",
       "birthday": "1995-12-21",
       "schoolfee": "1500000",
-      "marks": 11
+      "marks": 12
     },
     {
       "username": "a02",
@@ -73,7 +73,7 @@
       "gender": "true",
       "birthday": "2000-09-11T15:00:00.000Z",
       "schoolfee": 200000,
-      "marks": 0,
+      "marks": 1,
       "id": 7
     },
     {
@@ -95,7 +95,7 @@
       "gender": "true",
       "birthday": "2000-03-19T15:00:00.000Z",
       "schoolfee": 123,
-      "marks": 0,
+      "marks": 8,
       "id": 9
     },
     {

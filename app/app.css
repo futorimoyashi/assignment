@@ -23,3 +23,13 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+.banner {
+  background-image: url(images/banner.jpg);
+  height: 400px;
+  color: white;
+  background-size: cover;
+  background-position:-10 0px;
+  background-attachment: fixed;
+  margin: -20px
+}

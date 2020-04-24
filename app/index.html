@@ -15,13 +15,18 @@
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="lib/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
-
+  
   <link rel="stylesheet" href="views/errors/404.css">
 </head>
 <body ng-app="myApp">
   <div ng-include="'views/partials/nav.html'"></div>
-  <div class="container" >
+  <div class="container-fluid">
     <div ng-view></div>
+    <footer class="card card-default row">
+      <div class="card-header text-center">
+          <p>Futori &copy;Moyashi. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

@@ -22,10 +22,10 @@
 			<a class="nav-link" href="#!/listSubjects">List Subjects</a>
 		</li>
 	  </ul>
-	  <form class="form-inline my-2 my-lg-0 float-right" style="padding-top: 9px;">
+	  <form class="form-inline my-2 my-lg-0 mr-4 float-right" style="padding-top: 9px;">
 		<div class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  Account
+			  Account <p ng-if="isLogin() === true">{{getName()}}</p>
 			</a>
 			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="right: 0; left: auto;">
 				<a class="dropdown-item" href="#!/login" ng-if="isLogin() === false">Login</a>

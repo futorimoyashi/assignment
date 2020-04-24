@@ -1,0 +1,21 @@
+<div >
+    <div class="row">
+        <div class="card col">
+            <div class="card-header">
+                Select Your Option
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">
+                    <select ng-model="time">
+                        <option value="10">10 mins</option>
+                        <option value="15">15 mins</option>
+                        <option value="30">30 mins</option>
+                    </select>
+                </p>
+                <a ng-href="#!/listSubjects" class="nav-link">Back</a>
+                <a ng-href="#!/takeQuiz/{{subjectCode}}" ng-click="setTime()" class="nav-link">Start The Quiz</a>
+            </div>
+        </div>
+    </div>
+</div>

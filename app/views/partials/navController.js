@@ -2,7 +2,11 @@
 
 angular.module('myApp.nav', [])
     .controller('NavCtrl', ['studentFactory','$scope', function ( studentFactory, $scope) {
-        $scope.isLogin =()=>{
+        $scope.isLogin = () => {
             return studentFactory.getIsLogin();
         };
+
+        $scope.getName = () => {
+            return studentFactory.getName();
+        }
     }]);

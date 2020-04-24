@@ -6,13 +6,22 @@ angular.module('myApp')
         var list =[];
         var isLogin = false;
         var self = this;
+        var name = '';
 
-        studentFactory.getIsLogin=()=>{
+        studentFactory.getIsLogin = () => {
             return isLogin;
         };
-        studentFactory.setIsLogin =(value)=>{
+        studentFactory.setIsLogin = (value)=> {
             isLogin = value;
         };
+
+        studentFactory.getName = () => {
+            return name;
+        }
+
+        studentFactory.setName = (value) => {
+            name = value;
+        }
 
         studentFactory.checkLogin = (username, password)=>{
             var promise = studentFactory.getStudents().then((data)=>{
